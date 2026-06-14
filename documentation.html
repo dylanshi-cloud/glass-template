@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Glass Template — Documentation</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Outfit:wght@400;500&display=swap" rel="stylesheet" />
+  <style>
+    :root{--font:'Inter',sans-serif;--font-display:'Outfit',sans-serif;--accent:#6366F1;--text:#1A1D2E;--text-light:#6B7280;--bg:#F8F9FC;--border:rgba(0,0,0,0.06)}
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:var(--font);font-weight:400;font-size:1rem;line-height:1.8;color:var(--text);background:var(--bg);padding:3rem 1.5rem}
+    .container{max-width:800px;margin:0 auto}
+    h1{font-family:var(--font-display);font-size:2.5rem;font-weight:600;margin-bottom:0.5rem}
+    h2{font-family:var(--font-display);font-size:1.5rem;font-weight:500;margin:2.5rem 0 1rem;padding-bottom:0.5rem;border-bottom:1px solid var(--border)}
+    h3{font-size:1.1rem;font-weight:500;margin:1.5rem 0 0.5rem}
+    p{margin-bottom:1rem;color:var(--text-light)}
+    code,pre{font-family:'SF Mono','Fira Code',monospace;font-size:0.85rem;background:#fff;border:1px solid var(--border);border-radius:6px}
+    code{padding:0.15rem 0.4rem}
+    pre{padding:1.2rem;overflow-x:auto;margin:1rem 0}
+    .step{background:#fff;padding:1.5rem;margin:1rem 0;border-radius:12px;border:1px solid var(--border)}
+    .step h3{margin-top:0}
+    ul{margin:0.5rem 0 1rem 1.5rem}
+    li{margin-bottom:0.3rem;color:var(--text-light)}
+    hr{border:none;border-top:1px solid var(--border);margin:2rem 0}
+    .footer-doc{margin-top:3rem;font-size:0.85rem;color:var(--text-light);text-align:center}
+  </style>
+</head>
+<body>
+<div class="container">
+  <h1>Glass Template</h1>
+  <p style="font-size:1.1rem">Premium Glassmorphism Template — Documentation</p>
+  <hr/>
+
+  <h2>📦 What's Included</h2>
+  <ul>
+    <li><code>index.html</code> — Full template (Hero, Showcase, Features, Pricing, Contact, Footer)</li>
+    <li><code>css/style.css</code> — Complete stylesheet with CSS variables + dark mode</li>
+    <li><code>js/main.js</code> — All interactions (dark mode toggle, scroll reveals, mobile nav)</li>
+  </ul>
+
+  <h2>🎨 How to Customize</h2>
+
+  <div class="step">
+    <h3>Step 1: Brand Colors</h3>
+    <p>Open <code>css/style.css</code> and edit the <code>:root</code> variables:</p>
+    <pre>  --accent: #6366F1;        /* Main brand color (purple) */
+  --accent-light: #A5B4FC;  /* Light variant */
+  --accent-dark: #4F46E5;   /* Dark variant */</pre>
+    <p>Dark mode colors are in <code>[data-theme="dark"]</code>.</p>
+  </div>
+
+  <div class="step">
+    <h3>Step 2: Brand Text</h3>
+    <p>Open <code>index.html</code> and search for <code>CUSTOMIZE</code>. Each section has a comment marking what to edit.</p>
+  </div>
+
+  <div class="step">
+    <h3>Step 3: Dark Mode</h3>
+    <p>Dark mode is built-in. The theme toggle button saves user preference to localStorage. To remove it, delete the <code>.theme-toggle</code> button from the HTML and the dark mode JS from <code>main.js</code>.</p>
+  </div>
+
+  <div class="step">
+    <h3>Step 4: Set Up Order Email</h3>
+    <p>Open <code>js/main.js</code> and find the contact form — update the email address to yours.</p>
+  </div>
+
+  <h2>🚀 Deployment</h2>
+  <p>Static HTML — works with any hosting:</p>
+  <pre>  # GitHub Pages
+  git push  # then enable Pages in Settings
+
+  # Netlify
+  # Drag & drop folder to app.netlify.com/drop</pre>
+
+  <h2>🔧 Structure</h2>
+  <pre>  glass-template/
+  ├── index.html
+  ├── css/style.css
+  ├── js/main.js
+  └── images/</pre>
+
+  <h2>✨ Features</h2>
+  <ul>
+    <li>Frosted glass cards with CSS backdrop-filter</li>
+    <li>Fluid animated gradient backgrounds</li>
+    <li>Floating glass orbs with parallax</li>
+    <li>Built-in dark mode with persistence</li>
+    <li>Mobile-responsive, blur nav, glass buttons</li>
+    <li>Zero dependencies</li>
+  </ul>
+
+  <div class="footer-doc">
+    <p>Glass Template — Made with intention.</p>
+  </div>
+</div>
+</body>
+</html>
